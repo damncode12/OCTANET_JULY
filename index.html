@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Ayushi Dwivedi</span></h1>
+                <br>
+                <p>Devops Trainee and a Web Developer</p>
+                
+            </div>
+
+        </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/myimg.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <br>
+                <p>Hi all 👋. I am Ayushi Dwivedi and I am a junior at JUET, Guna, Madhya Pradesh. I am an upcoming intern 🧑‍💻@Lets Grow More in the Web Development Virtual Internship program. I am a DevOps enthusiast ⚡ and I love building great websites that support modern standards and platforms 🌐✅. I am also a musicphile 🎧🎶 and I also enjoy playing badminton 🏸.</p>
+                <br>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>Go,Python,C++,C,JavaScript,SQL</li>
+                        <br>
+                        <li><span>Tools</span><br>Docker,GIT,MySQL,SQLite,Firebase RealtimeDB</li>
+                        <br>
+                        <li><span>Framework</span><br>React,Tkinter,Customtkinter</li>
+                        <br>
+                        <li><span>Soft Skills</span><br>Leadership,Event management,Writing,Public Speaking,Time management</li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Upcoming Web Developer intern</span><br>@LetsGrowMore,@OctaNet,@Codeclause</li>
+                        <br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Jaypee University of Engineering and Technology</span><br>Bachelor of Technology in Computer Science and Engineering(GPA 9.4)</li>
+                       <br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div> 
+
+    </div>
+    <script>
+       var tablinks= document.getElementsByClassName("tab-links");
+       var tabcontents= document.getElementsByClassName("tab-contents");
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+       
+    </script>
+    
+
+</body>
+</html>
