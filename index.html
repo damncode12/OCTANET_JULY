@@ -1,96 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css"
-</head>
-<body>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.jpg" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    
-                </ul>
-            </nav>
-            <div class="header-text">
-                <h1>Hi, I'm <span>Ayushi Dwivedi</span></h1>
-                <br>
-                <p>Devops Trainee and a Web Developer</p>
-                
-            </div>
-
+      <div class="container">
+        <nav>
+          <img src="images/logo.jpg" class="logo" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span>Ayushi Dwivedi</span></h1>
+          <br />
+          <p>Devops Trainee and a Web Developer</p>
         </div>
+      </div>
     </div>
     <div id="about">
       <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="images/myimg.png" >
+          <div class="about-col-1">
+            <img src="images/myimg.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+            <p>
+              Hi all 👋. I am Ayushi Dwivedi and I am a junior at JUET, Guna,
+              Madhya Pradesh. I am an upcoming intern 🧑‍💻@Lets Grow More in the
+              Web Development Virtual Internship program. I am a DevOps
+              enthusiast ⚡ and I love building great websites that support
+              modern standards and platforms 🌐✅. I am also a musicphile 🎧🎶
+              and I also enjoy playing badminton 🏸.
+            </p>
+            <br />
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <br>
-                <p>Hi all 👋. I am Ayushi Dwivedi and I am a junior at JUET, Guna, Madhya Pradesh. I am an upcoming intern 🧑‍💻@Lets Grow More in the Web Development Virtual Internship program. I am a DevOps enthusiast ⚡ and I love building great websites that support modern standards and platforms 🌐✅. I am also a musicphile 🎧🎶 and I also enjoy playing badminton 🏸.</p>
-                <br>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span><br />Go,Python,C++,C,JavaScript,SQL
+                </li>
+                <br />
+                <li>
+                  <span>Tools</span><br />Docker,GIT,MySQL,SQLite,Firebase
+                  RealtimeDB
+                </li>
+                <br />
+                <li><span>Framework</span><br />React,Tkinter,Customtkinter</li>
+                <br />
+                <li>
+                  <span>Soft Skills</span><br />Leadership,Event
+                  management,Writing,Public Speaking,Time management
+                </li>
+              </ul>
+              <br />
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Upcoming Web Developer intern</span
+                  ><br />@LetsGrowMore,@OctaNet,@Codeclause
+                </li>
+                <br />
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Jaypee University of Engineering and Technology</span
+                  ><br />Bachelor of Technology in Computer Science and
+                  Engineering(GPA 9.4)
+                </li>
+                <br />
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!--potfolio-->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <br />
+        <h3>Dock-X :</h3>
+        <br />
+        <p>
+          Dock-X is a user-friendly GUI software designed to simplify docker
+          management. It provides a visual interface for maintaining Docker
+          containers, images, networks, and volumes, making it easier for users
+          to interact with the docker ecosystem. Dock-X is developed using
+          Customtkinter and Docker SDK.
+        </p>
+        <br />
+        <br />
+        <h3>Crop Prediction ML model :</h3>
+        <br />
+        <p>
+          Crop Prediction ML model utilize machine learning algorithms to
+          forecast crop yields. Popular libraries used in these models include
+          Scikit-learn, pandas, numpy and XGBoost.
+        </p>
+        <br>
+        <br>
+        <h3>QR Code Scanner :</h3>
+        <br />
+        <p>
+          A QR code scanner built in Android Studio is a software tool designed
+          to read and decode Quick Response (QR) codes using the Android
+          development environment. It allows users to scan QR codes with their
+          Android devices and retrieve the information embedded within the code.
+        </p>
+        <br>
+        <br>
+        <h3>Web Development Tasks:</h3>
+        <br />
+        <p>
+          Portfolio<br>
+          ToDo List
+
+        </p>
+        <br>
+        <br>
+        <br>
+
+        <h1 class="sub-title">Leadership/Extracurricular</h1>
+        <br>
+        <p>
+            Google Developer Student Clubs(Volunteer: Nov 2021-May 2022)<br>
+            JYC Literary wing (Volunteer and Coordinator: Nov 2021-June 2023)<br>
+            JYC Music wing(Band's Lead Vocalist)
+        </p>
+      </div>
+    </div>
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <h1 class="sub-title">Contact Me</h1>
+                <br>
+                <br>
+                <p>Gmail - ayushiom1203@gmail.com</p>
+                <p>Contact No. - 6267249080</p>
+                <br>
+                <br>
+                <div class="social-icons">
+                    <a href="https://github.com/damncode12"><img src="images/github.png" width="50" height="50" alt="GitHub" /></a>
+                    <a href="https://www.linkedin.com/in/ayushidwivedi1208/"><img src="images/linkedin.png" width="50" height="50" alt="LinkedIn" /></a>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Languages</span><br>Go,Python,C++,C,JavaScript,SQL</li>
-                        <br>
-                        <li><span>Tools</span><br>Docker,GIT,MySQL,SQLite,Firebase RealtimeDB</li>
-                        <br>
-                        <li><span>Framework</span><br>React,Tkinter,Customtkinter</li>
-                        <br>
-                        <li><span>Soft Skills</span><br>Leadership,Event management,Writing,Public Speaking,Time management</li>
-                    </ul>
-                    <br>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Upcoming Web Developer intern</span><br>@LetsGrowMore,@OctaNet,@Codeclause</li>
-                        <br>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>Jaypee University of Engineering and Technology</span><br>Bachelor of Technology in Computer Science and Engineering(GPA 9.4)</li>
-                       <br>
-                    </ul>
-                </div>
+                <br>
+                <br>
+                <a href="images/Final Ayushi Resume.pdf" download class="btn btn1">Download Resume</a>
             </div>
         </div>
-      </div> 
-
     </div>
+    <div class="copyright">
+        <p>Copyright &copy; Ayushi. Made with &hearts; by Ayushi. </p>
+    </div>
+</div>
+
     <script>
-       var tablinks= document.getElementsByClassName("tab-links");
-       var tabcontents= document.getElementsByClassName("tab-contents");
-       function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-        
-    }
-       
+      }
     </script>
-    
-
-</body>
+  </body>
 </html>
