@@ -4,6 +4,9 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #080808;
     color: white;
@@ -51,6 +54,9 @@ nav ul li a::after{
 }
 nav ul li a:hover::after{
     width: 100%;
+}
+nav ul li a:hover{
+    color: #ff004f;
 }
 .header-text{
     margin-top: 20%;
@@ -129,3 +135,65 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+#portfolio{
+    padding: 50px 0;
+    
+}
+.sub-title{
+    text-decoration: underline;
+    color: #ff004f;
+}
+.btn.btn1{
+    display: inline-block;
+    background-color: #ff004f;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #ababab;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #080808;
+}
+
+@media (max-width: 768px) {
+    .logo {
+      width: 100px;
+    }
+  
+    nav ul li {
+      margin: 2px 10px;
+    }
+  
+    .header-text {
+      margin-top: 10%;
+      font-size: 18px;
+    }
+  
+    .header-text h1 {
+      font-size: 30px;
+      margin-top: 10px;
+    }
+  
+    .about-col-1 img {
+      border-radius: 20px;
+    }
+  
+    .sub-title {
+      font-size: 18px;
+    }
+  
+    .tab-links {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  
+    .tab-contents ul li span {
+      font-size: 12px;
+    }
+  }
